@@ -1,0 +1,8 @@
+.product{background-color: aqua;
+padding: 40px 0}
+
+.product__text{
+    background-color: bisque;
+    padding: 10px 0;
+    &:not(:last-child){margin-bottom: 15px;}
+}
