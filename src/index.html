@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -20,10 +24,28 @@
       <include src="./partials/team.html"></include>
 
       <include src="./partials/about.html"></include>
-      <include src=""></include>
+      <include src="./partials/swiper.html"></include>
     </main>
 
     <!-- footer -->
     <include src=""></include>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'cube',
+        direction: 'vertical',
+        loop: true,
+        grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
   </body>
 </html>
